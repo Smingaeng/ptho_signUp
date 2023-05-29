@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/user_list"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:text="나이" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#AAA9A9"
+            app:srcCompat="@drawable/line" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/nanumsquareroundr"
+            android:text="성별" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#AAA9A9"
+            app:srcCompat="@drawable/line" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:layout_height="50dp"
+            android:text="MBTI" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#AAA9A9"
+            app:srcCompat="@drawable/line" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:text="홍길동 님의 취향" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/category"
+                    android:padding="10dp"
+                    android:text="힙한" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/category"
+                    android:text="자취생" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/category"
+                    android:text="스타벅스" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@drawable/category"
+                    android:text="상품권" />
+
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@drawable/category"
+                    android:text="활발한" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#AAA9A9"
+            app:srcCompat="@drawable/line" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:gravity="center_vertical"
+            android:text="받은 쪽지"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DDADADA"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="320dp"
+        android:layout_height="630dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@android:style/Widget.TextView.PopupMenu"
+                android:layout_width="268dp"
+                android:layout_height="60dp"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:gravity="center"
+                android:text="선물 추천"
+                android:textSize="38dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:background="#1ADADADA"
+                android:drawablePadding="20dp"
+                android:paddingTop="10dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/giftbox"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundr"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="선물 박스 누르고 선물 추천 받으러 가기"
+                android:textColor="#FB564A"
+                android:textColorLink="#663FB8"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="355dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/view9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_box"
+                    android:padding="20dip"
+
+                    android:paddingRight="15dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/view8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_box"
+                    android:padding="10dip"
+
+                    android:paddingLeft="20dp"
+                    android:text="일단 이거누르면 친구목록"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="359dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/view10"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_box"
+                    android:padding="10dip"
+                    tools:ignore="SpeakableTextPresentCheck"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/view11"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_box"
+                    android:padding="10dip"
+                    android:text=""
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@android:style/Widget.TextView.SpinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquareroundl"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="두근두근"
+        android:textColor="#FB564A"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
